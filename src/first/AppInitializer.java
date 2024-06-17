@@ -25,5 +25,8 @@ public class AppInitializer extends Application {
         //Create a Scene
         Scene scene = new Scene(load);
 
+        //Set Scene to Stage
+        primaryStage.setScene(scene);
+
     }
 }
