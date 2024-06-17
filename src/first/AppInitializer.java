@@ -28,5 +28,8 @@ public class AppInitializer extends Application {
         //Set Scene to Stage
         primaryStage.setScene(scene);
 
+        //Show Stage
+        primaryStage.show();
+
     }
 }
