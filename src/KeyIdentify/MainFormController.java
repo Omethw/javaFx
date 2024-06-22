@@ -5,11 +5,9 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class MainFormController implements Initializable {
+public class MainFormController {
 
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    public void initialize(){
         System.out.println("Hello");
     }
 }
