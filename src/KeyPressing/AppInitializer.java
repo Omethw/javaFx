@@ -13,7 +13,7 @@ public class AppInitializer extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("MainFormController.fxml"))));
+        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("MainForm.fxml"))));
         primaryStage.show();
     }
 }

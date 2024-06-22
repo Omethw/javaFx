@@ -21,7 +21,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtKeyPress" layoutX="31.0" layoutY="85.0" onKeyPressed="#keyPressOnAction" prefHeight="34.0" prefWidth="244.0" promptText="Type Here">
+      <TextField fx:id="txtKeyPress" layoutX="31.0" layoutY="85.0" onKeyPressed="#onKeyPress" prefHeight="34.0" prefWidth="244.0" promptText="Type Here">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
