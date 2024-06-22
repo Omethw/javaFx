@@ -11,5 +11,7 @@ public class MainFormController {
 
     public void keyPressOnAction(ActionEvent actionEvent) {
 
+        String value= txtKeyPress.getText();
+        lblKeyPressAnswer.setText(value);
     }
 }
