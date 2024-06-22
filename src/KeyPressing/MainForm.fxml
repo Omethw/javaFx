@@ -31,5 +31,15 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+      <TextField fx:id="txtKeyRelease" layoutX="31.0" layoutY="263.0" onKeyReleased="#onKeyRelease" prefHeight="34.0" prefWidth="244.0" promptText="Type Here">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblKeyRelease" layoutX="321.0" layoutY="263.0" prefHeight="34.0" prefWidth="255.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
