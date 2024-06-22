@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -14,5 +15,10 @@
          </font>
       </Label>
       <ComboBox fx:id="cmbLanguages" layoutX="25.0" layoutY="82.0" prefHeight="20.0" prefWidth="215.0" promptText="Languages " />
+      <TextField fx:id="txtLoadData" disable="true" layoutX="25.0" layoutY="213.0" prefHeight="35.0" prefWidth="223.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>
