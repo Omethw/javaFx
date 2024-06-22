@@ -15,8 +15,7 @@ public class MainFormController {
 
         //Add a Listener
         txtInput.textProperty().addListener((observable, oldValue, newValue) -> {
-            System.out.println("New Value : "+newValue);
-            System.out.println("Old Value : "+oldValue);
+            txtOutput.setText(newValue);
         });
 
     }
