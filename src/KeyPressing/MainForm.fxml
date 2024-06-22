@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="KeyPressing.MainFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KeyPressing.MainFormController">
+   <children>
+      <Separator layoutX="297.0" layoutY="19.0" orientation="VERTICAL" prefHeight="367.0" prefWidth="20.0" />
+      <Separator layoutX="9.0" layoutY="201.0" prefHeight="11.0" prefWidth="578.0" />
+      <Label layoutX="269.0" layoutY="19.0" prefHeight="27.0" prefWidth="131.0" text="Key Press" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="212.0" prefHeight="27.0" prefWidth="131.0" text="Key Release" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtKeyPress" layoutX="31.0" layoutY="85.0" onKeyPressed="#keyPressOnAction" prefHeight="34.0" prefWidth="244.0" promptText="Type Here">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblKeyPressAnswer" layoutX="321.0" layoutY="85.0" prefHeight="34.0" prefWidth="255.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
