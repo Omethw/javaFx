@@ -1,5 +1,7 @@
 package ComboBox;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.control.ComboBox;
 
 import java.util.ArrayList;
@@ -13,17 +15,11 @@ public class MainFormController {
             Arrays.asList("Java","Python","Javascript","Php","Ruby")
     );
 
+    ObservableList<String> obList = FXCollections.observableArrayList(languages);
+
     public void initialize(){
 
-        /*cmbLanguages.getItems().add("Java");
-        cmbLanguages.getItems().add("Python");
-        cmbLanguages.getItems().add("Javascript");
-        cmbLanguages.getItems().add("Php");
-        cmbLanguages.getItems().add("Ruby");*/
-
-        for (String temp:languages) {
-            cmbLanguages.getItems().add(temp);
-        }
+        cmbLanguages.setItems(obList);
     }
 
 }
