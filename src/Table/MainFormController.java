@@ -11,13 +11,13 @@ public class MainFormController {
 
     public TableView<CustomerTm> tblCustomer;
 
-    public TableColumn<CustomerTm,String> colNic;
-    public TableColumn<CustomerTm,String> colName;
-    public TableColumn<CustomerTm,String> colAddress;
-    public TableColumn<CustomerTm,Double> colSalary;
+    public TableColumn<CustomerTm, String> colNic;
+    public TableColumn<CustomerTm, String> colName;
+    public TableColumn<CustomerTm, String> colAddress;
+    public TableColumn<CustomerTm, Double> colSalary;
     public TableColumn<CustomerTm, Button> colDelete;
 
-    public void initialize(){
+    public void initialize() {
 
         colNic.setCellValueFactory(new PropertyValueFactory<>("nic"));
         colName.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -25,11 +25,23 @@ public class MainFormController {
         colSalary.setCellValueFactory(new PropertyValueFactory<>("salary"));
         colDelete.setCellValueFactory(new PropertyValueFactory<>("button"));
 
+        loadData();
+
+
+    }
+
+    private void loadData() {
+
         ObservableList<CustomerTm> custList = FXCollections.observableArrayList();
 
-        for (Customer c: Database.customersDataList) {
+        for (Customer c : Database.customersDataList) {
 
             Button button = new Button("Delete");
+
+            button.setOnAction(event -> {
+                Database.customersDataList.remove(c);
+                loadData();
+            });
 
             custList.add(new CustomerTm(
                     c.getNic(),
@@ -42,6 +54,5 @@ public class MainFormController {
         }
 
         tblCustomer.setItems(custList);
-
     }
 }
