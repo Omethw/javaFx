@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KeyEvent.MainFormController">
+   <children>
+      <TextField fx:id="txtTypeHere" layoutX="105.0" layoutY="48.0" onKeyReleased="#typeOnAction" prefHeight="44.0" prefWidth="370.0" promptText="Type Here...">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAnswer" disable="true" layoutX="105.0" layoutY="156.0" prefHeight="44.0" prefWidth="370.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
