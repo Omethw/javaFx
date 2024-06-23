@@ -12,9 +12,10 @@ public class MainFormController {
     public TextField txtOutput;
     public TextField textInput;
 
+    ObservableList<String> oblist = FXCollections.observableArrayList();
+
     public void inputOnAction(ActionEvent actionEvent) {
 
-        ObservableList<String> oblist = FXCollections.observableArrayList();
         oblist.add(textInput.getText());
         lstLanguages.setItems(oblist);
         textInput.clear();
