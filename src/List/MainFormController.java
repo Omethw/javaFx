@@ -13,6 +13,11 @@ public class MainFormController {
     public TextField txtOutput;
     public TextField textInput;
 
+    public void initialize(){
+        lstLanguages.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            txtOutput.setText(newValue);
+        });
+    }
 
     ObservableList<String> oblist = FXCollections.observableArrayList();
 
