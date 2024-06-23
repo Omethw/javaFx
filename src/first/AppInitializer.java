@@ -17,7 +17,7 @@ public class AppInitializer extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         //Catch Fxml File
-        URL resource = getClass().getResource("MainForm.fxml");
+        URL resource = getClass().getResource("WindowA.fxml");
 
         //Load to the Ram
         Parent load = FXMLLoader.load(resource);
